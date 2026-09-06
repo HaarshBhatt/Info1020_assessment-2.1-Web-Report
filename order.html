@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order | Harriet Boone Woodcraft</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Harriet Boone Woodcraft</h1>
+        <p class="tagline">Handcrafted wooden wearable art, made in South Australia</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="order.html" class="active">Order</a></li>
+            <li><a href="blog.html">Blog</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2 class="page-title">Place an Order</h2>
+        <p class="page-intro">Tell me what you're after and I'll be in touch within two business days to confirm your order.</p>
+
+        <div class="order-layout">
+            <section class="order-form-wrap">
+                <form id="order-form" novalidate>
+                    <div class="field">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name">
+                        <span class="error" id="name-error"></span>
+                    </div>
+                    <div class="field">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email">
+                        <span class="error" id="email-error"></span>
+                    </div>
+                    <div class="field">
+                        <label for="item">Item of Interest</label>
+                        <select id="item" name="item">
+                            <option value="">Please choose an option</option>
+                            <option value="earrings">Earrings</option>
+                            <option value="brooches">Brooches</option>
+                            <option value="hairpins">Hairpins</option>
+                            <option value="bracelets">Bracelets</option>
+                            <option value="custom">Custom Order</option>
+                        </select>
+                        <span class="error" id="item-error"></span>
+                    </div>
+
+                    <div class="field">
+                        <label for="message">Details of your order</label>
+                        <textarea id="message" name="message" rows="5"></textarea>
+                        <span class="error" id="message-error"></span>
+                    </div>
+
+                    <button type="submit" class="btn">Send Enquiry</button>
+                    <p class="form-success" id="form-success"></p>
+
+                </form>
+            </section>
+
+            <aside class="order-info">
+                <img src="images/packaging.png" alt="Wooden jewellery pieces in packaging">
+                <h3>What to Expect</h3>
+                <p>Orders are made to order, so allow two to three weeks depending on the piece and current workload.</p>
+                <p>Everything ships in recycled packaging with tracked postage across Australia.</p>
+                <h3>Find me locally</h3>
+                <p>I sell at various craft fairs and markets around Adelaide. Check my social media for upcoming events!</p>
+            </aside>
+        </div>
+    </main>
+
+    <footer>
+        <p>Harriet Boone Woodcraft, Adelaide SA</p>
+        <p>Email: hello@harrietboonewoodcraft.com.au</p>
+        <p>Follow: Instagram | YouTube | Facebook</p>
+        <p>&copy; 2026 Harriet Boone Woodcraft. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>    
+
+</body>
+
+</html>
